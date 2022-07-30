@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textStyle="bold"
+        android:text="Puzzle Huruf Game \nDani Fitrianto Nugraha"
+        android:textSize="24dp"/>
+
+    <RelativeLayout
+        android:id="@+id/patternWords"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat1"
+            style="@style/PatternStyle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:tag="00"
+            android:text="A" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat2"
+            style="@style/PatternStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/wordPat1"
+            android:tag="01"
+            android:text="B" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat3"
+            style="@style/PatternStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/wordPat2"
+            android:tag="02"
+            android:text="C" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat4"
+            style="@style/PatternStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/wordPat3"
+            android:tag="03"
+            android:text="D" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat5"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat1"
+            android:tag="10"
+            android:text="E" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat6"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat2"
+            android:layout_toEndOf="@+id/wordPat5"
+            android:tag="11"
+            android:text="F" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat7"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat2"
+            android:layout_toEndOf="@+id/wordPat6"
+            android:tag="12"
+            android:text="E" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat8"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat3"
+            android:layout_toEndOf="@+id/wordPat7"
+            android:tag="13"
+            android:text="F" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat9"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat6"
+            android:layout_alignParentStart="true"
+            android:tag="20"
+            android:text="G" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat10"
+            style="@style/PatternStyle"
+            android:layout_below="@id/wordPat6"
+            android:layout_toEndOf="@+id/wordPat9"
+            android:tag="21"
+            android:text="H" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat11"
+            style="@style/PatternStyle"
+            android:layout_below="@id/wordPat7"
+            android:layout_toEndOf="@+id/wordPat10"
+            android:tag="22"
+            android:text="I" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat12"
+            style="@style/PatternStyle"
+            android:layout_below="@id/wordPat8"
+            android:layout_toEndOf="@+id/wordPat11"
+            android:tag="23"
+            android:text="J" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat13"
+            style="@style/PatternStyle"
+            android:layout_below="@id/wordPat9"
+            android:layout_alignParentStart="true"
+            android:tag="30"
+            android:text="k" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat14"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat10"
+            android:layout_toEndOf="@+id/wordPat13"
+            android:tag="31"
+            android:text="L" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat15"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat11"
+            android:layout_toEndOf="@+id/wordPat14"
+            android:tag="32"
+            android:text="M" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wordPat16"
+            style="@style/PatternStyle"
+            android:layout_below="@+id/wordPat12"
+            android:layout_toEndOf="@+id/wordPat15"
+            android:tag="33" />
+
+    </RelativeLayout>
+
+</FrameLayout>
